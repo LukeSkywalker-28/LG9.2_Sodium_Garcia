@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="function2()">This will lead to page 1</button>
+
+    <script>
+        function function2() {
+            alert("You have been rerouted to page 1");
+            window.open('index.html');
+        }
+        </script>
+
+    <button onclick="document.getElementById('myImage').src='ind_01.JPG'">Original Image</button>
+
+    <img id="myImage" src="ind_01.JPG" width="400" height="300">
+
+    <button onclick="document.getElementById('myImage').src='ind_02.JPG'">Revert Image</button>
+
+
+
+    
+</body>
+</html>
